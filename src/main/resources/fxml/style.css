@@ -1,0 +1,157 @@
+/* ===============================
+   GLOBAL
+   =============================== */
+
+.root {
+    -fx-font-family: "Inter", "Segoe UI", "SF Pro Display", "Roboto", sans-serif;
+    -fx-background-color: #0f1117;
+}
+
+/* ===============================
+   TAB CONTENT
+   =============================== */
+
+.tab-content {
+    -fx-background-color: linear-gradient(to bottom right, #141421, #10101a);
+    -fx-padding: 24;
+}
+
+/* ===============================
+   LABELS / TEXT
+   =============================== */
+
+.label {
+    -fx-text-fill: #eaeaf0;
+    -fx-font-size: 15;
+}
+
+.label.title {
+    -fx-font-size: 22;
+    -fx-font-weight: bold;
+}
+
+.label.subtitle {
+    -fx-font-size: 13;
+    -fx-text-fill: #9ca3af;
+}
+
+/* ===============================
+   TAB BAR / BUTTONS
+   =============================== */
+
+.tab-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9ca3af;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 10 16;
+    -fx-cursor: hand;
+}
+
+.tab-button:hover {
+    -fx-text-fill: #22c55e;
+}
+
+.tab-button:selected {
+    -fx-text-fill: #22c55e;
+    -fx-border-color: #22c55e;
+    -fx-border-width: 0 0 2 0;
+}
+
+/* ===============================
+   CARDS (stats, classes, profile)
+   =============================== */
+
+.card {
+    -fx-background-color: linear-gradient(to bottom right, #1a1d2b, #16182a);
+    -fx-padding: 18;
+    -fx-spacing: 12;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 12, 0, 0, 4);
+}
+
+.card:hover {
+    -fx-background-color: linear-gradient(to bottom right, #20244a, #1a1d35);
+}
+
+/* Text din card */
+.card .label {
+    -fx-font-size: 14;
+}
+
+.card .label.value {
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: #22c55e;
+}
+
+/* ===============================
+   BUTTONS (general)
+   =============================== */
+
+.button {
+    -fx-background-color: #22c55e;
+    -fx-text-fill: #0f1117;
+    -fx-font-weight: bold;
+    -fx-background-radius: 12;
+    -fx-padding: 10 18;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #16a34a;
+}
+
+.button:pressed {
+    -fx-background-color: #15803d;
+}
+
+/* ===============================
+   INPUTS
+   =============================== */
+
+.text-field,
+.password-field {
+    -fx-background-color: #121526;
+    -fx-text-fill: #e5e7eb;
+    -fx-prompt-text-fill: #6b7280;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #1f2937;
+    -fx-padding: 10;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #22c55e;
+}
+
+/* ===============================
+   LIST / TABLE (classes, history)
+   =============================== */
+
+.list-view,
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.list-cell,
+.table-row-cell {
+    -fx-background-color: #14182a;
+    -fx-text-fill: #e5e7eb;
+}
+
+.list-cell:selected,
+.table-row-cell:selected {
+    -fx-background-color: #22c55e33;
+}
+
+/* ===============================
+   SCROLLBAR (optional polish)
+   =============================== */
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #22c55e;
+    -fx-background-radius: 10;
+}
